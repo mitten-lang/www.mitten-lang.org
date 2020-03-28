@@ -8,7 +8,7 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
       </header>
-      <p className="App-copyright">Copyright &copy; 2020 The Mitten Programming Language 2020. All Rights Reserved.</p>
+      <p className="App-copyright">Copyright &copy; The Mitten Programming Language 2020. All Rights Reserved.</p>
     </div>
   );
 }
