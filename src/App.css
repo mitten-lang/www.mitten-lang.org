@@ -1,0 +1,42 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 15vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-swell infinite 2s ease-in-out;
+    animation-direction: alternate;
+  }
+}
+
+.App-header {
+  background-color: white;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.App-copyright {
+  font-size: calc(10px + 0.2vmin);
+  color: #777e8d;
+  position: absolute;
+  bottom: 0.2vmin;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+@keyframes App-logo-swell {
+  from {
+    transform: scale(1.0);
+  }
+  to {
+    transform: scale(1.2);
+  }
+}
