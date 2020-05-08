@@ -3,13 +3,14 @@
 }
 
 .App-logo {
-  height: 15vmin;
+  height: 20vmin;
   pointer-events: none;
+  margin: 20px;
 }
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
-    animation: App-logo-swell infinite 2s ease-in-out;
+    animation: App-logo-swell 2s ease-in-out;
     animation-direction: alternate;
   }
 }
@@ -23,6 +24,10 @@
   justify-content: center;
 }
 
+.App-notice {
+  font-weight: normal;
+}
+
 .App-copyright {
   font-size: calc(10px + 0.2vmin);
   color: #777e8d;
@@ -32,11 +37,32 @@
   transform: translateX(-50%);
 }
 
+.Button a {
+  text-decoration: none;
+  color: #f94a76;
+  transition: background-color 100ms, color 100ms;
+  border: 1px solid #f94a76;
+  border-radius: 5px;
+  padding: 10px;
+  display: block;
+}
+
+.Button a:hover {
+  text-decoration: none;
+  color: white;
+  background-color: #f94a76;
+}
+
 @keyframes App-logo-swell {
-  from {
-    transform: scale(1.0);
+  0% {
+    transform: scale(0.6);
+    opacity: 0;
   }
-  to {
+  30% {
     transform: scale(1.2);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1.0);
   }
 }
